@@ -1,0 +1,28 @@
+Задание: 1
+mkdir homework
+cd /home/den/homework
+cat > pet_animals
+cat > pack_animals
+cat pet_animals pack_animals > animals
+cat animals
+mv animals friend_of_human
+ls -ali
+
+Задание: 2
+cd ..
+mkdir homework_project
+cd /home/den/homework
+mv friend_of_human /home/den/homework_project
+cd /home/den/homework_project
+
+Задание: 3
+sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.23-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.23-1_all.deb
+sudo apt-get update
+sudo apt-get install mysql-server
+
+Задание: 4
+sudo wget https://download.docker.com/linux/ubuntu/dists/jammy/pool/stable/amd64/docker-ce-cli_20.10.13~3-0~ubuntu-jammy_amd64.deb
+sudo dpkg -i docker-ce-cli_20.10.13~3-0~ubuntu-jammy_amd64.deb
+sudo dpkg -r docker-ce
+sudo dpkg -r docker-ce-cli
